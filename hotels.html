@@ -14,7 +14,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-current"><a>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -24,71 +24,85 @@
         <h2 class="visually-hidden">Фильтр отелей</h2>
         <!-- Форма -->
       </section>
-      <section class="filter-result">
+      <div class="filter-result">
         <p>Найдено: 3</p>
-        <h2>Сортировка</h2>
+        <p>Сортировка</p>
         <ul class="hotels-sort">
           <li class="sort-criterion"><a href="#">По цене</a></li>
           <li class="sort-criterion"><a href="#">По типу</a></li>
           <li class="sort-criterion"><a href="#">По рейтингу</a></li>
+          <li class="sort-criterion"><!--вверх--></li>
+          <li class="sort-criterion"><!--вниз--></li>
         </ul>
-      </section>
+      </div>
       <section class="hotels-catalog">
         <h2 class="visually-hidden">Список отелей</h2>
         <ul class="hotels-list">
           <li class="hotels-item">
-            <h3>
-              <a href="#">Amara Resort & Spa</a>
-            </h3>
-            <p class="hotels-item-image">
-              <a href="#">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="Amara Resort & Spa">
-              </a>
-            </p>
-            <p class="hotels-detail">
-              <span>Гостиница</span>
-              <span>От 4000 р.</span>
-              <span>Рейтинг: 8,5</span>
-              <img src="hotels-star.img" alt="4 звезды">
-            </p>
-            <a class="detail-button" href="#">Подробнее</a>
-            <a class="booking-button" href="#">Забронировать</a>
+            <article class="hotel-card">
+              <h3>
+                <a href="#">Amara Resort &amp;&nbsp;Spa</a>
+              </h3>
+              <p class="hotels-item-image">
+                <a href="#">
+                  <img src="http://placehold.it/150x100" width="150" height="100" alt="Amara Resort & Spa">
+                </a>
+              </p>
+              <p class="hotels-detail">
+                <span>Гостиница</span>
+                <span>От 4000 р.</span>
+                <span>Рейтинг: 8,5</span>
+                <div>
+                  <!-- звёзды -->
+                </div>
+              </p>
+              <a class="detail-button" href="#">Подробнее</a>
+              <a class="booking-button" href="#">Забронировать</a>
+            </article>
           </li>
           <li class="hotels-item">
-            <h3>
-              <a href="#">Desert Quail Inn</a>
-            </h3>
-            <p class="hotels-item-image">
-              <a href="#">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="Amara Resort & Spa">
-              </a>
-            </p>
-            <p class="hotels-detail">
-              <span>Мотель</span>
-              <span>От 3000 р.</span>
-              <span>Рейтинг: 8,9</span>
-              <img src="hotels-star.img" alt="3 звезды">
-            </p>
-            <a class="detail-button" href="#">Подробнее</a>
-            <a class="booking-button" href="#">Забронировать</a>
+            <article class="hotel-card">
+              <h3>
+                <a href="#">Desert Quail Inn</a>
+              </h3>
+              <p class="hotels-item-image">
+                <a href="#">
+                  <img src="http://placehold.it/150x100" width="150" height="100" alt="Amara Resort & Spa">
+                </a>
+              </p>
+              <p class="hotels-detail">
+                <span>Мотель</span>
+                <span>От 3000 р.</span>
+                <span>Рейтинг: 8,9</span>
+                <div>
+                  <!-- звёзды -->
+                </div>
+                </p>
+              <a class="detail-button" href="#">Подробнее</a>
+              <a class="booking-button" href="#">Забронировать</a>
+            </article>
           </li>
           <li class="hotels-item">
-            <h3>
-              <a href="#">Villas at Poco Diablo</a>
-            </h3>
-            <p class="hotels-item-image">
-              <a href="#">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="Amara Resort & Spa">
-              </a>
-            </p>
-            <p class="hotels-detail">
-              <span>Апартаменты</span>
-              <span>От 2000 р.</span>
-              <span>Рейтинг: 9,2</span>
-              <img src="hotels-star.img" alt="2 звезды">
-            </p>
-            <a class="detail-button" href="#">Подробнее</a>
-            <a class="booking-button" href="#">Забронировать</a>
+            <article class="hotel-card">
+              <h3>
+                <a href="#">Villas at Poco Diablo</a>
+              </h3>
+              <p class="hotels-item-image">
+                <a href="#">
+                  <img src="http://placehold.it/150x100" width="150" height="100" alt="Amara Resort & Spa">
+                </a>
+              </p>
+              <p class="hotels-detail">
+                <span>Апартаменты</span>
+                <span>От 2000 р.</span>
+                <span>Рейтинг: 9,2</span>
+                <div>
+                  <!-- звёзды -->
+                </div>
+              </p>
+              <a class="detail-button" href="#">Подробнее</a>
+              <a class="booking-button" href="#">Забронировать</a>
+            </article>
           </li>
         </ul>
       </section>
@@ -101,8 +115,8 @@
         <li><a href="#">Youtube</a></li>
       </ul>
       <p class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Website by HTML Academy</a>
+        Website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="htmlacademy.jpg" alt="HTML Academy"></a>
       </p>
-    </footer>
   </body>
 </html>
