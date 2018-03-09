@@ -22,7 +22,30 @@
       <h1 class="visually-hidden">Отели Седоны</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр отелей</h2>
-        <!-- Форма -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-criterion">
+            <legend>Инфраструктура</legend>
+            <input type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">Wi-Fi</label>
+          </fieldset>
+          <fieldset class="filter-criterion">
+            <legend>Тип жилья</legend>
+            <input type="checkbox" name="hotel" id="hotel" checked>
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" name="motel" id="motel" checked>
+            <label for="motel">Мотель</label>
+            <input type="checkbox" name="apartment" id="apartment" checked>
+            <label for="apartment">Апартаменты</label>
+          </fieldset>
+          <div>
+            <!-- форма с бегунками -->
+          </div>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <div class="filter-result">
         <p>Найдено: 3</p>
