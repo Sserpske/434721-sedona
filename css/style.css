@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-background {
+  width: 1200px;
+  height: 508px;
+  background-image:
+    url(../img/welcome-sedona.png),
+    url("../img/main-background-cut.jpg");
+  background-repeat: no-repeat;
+  background-position: center center, top center;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.site-navigation,
+.features-list,
+.additional-features,
+.additional-list {
+  list-style: none;
+}
+
+.lead-top {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  width: 440px;
+  margin: auto;
+}
+
+.sedona-reason {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.features-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.features-text {
+  width: 400px;
+  height: 256px;
+  background-color: #85b5d3;
+  color: #ffffff;
+  text-align: center;
+}
+
+.features-item:nth-child(1n+3) {
+  width: 400px;
+  height: 256px;
+  background-color: #eeeeee;
+ /* margin: auto;*/
+ text-align: center;
+}
+
+.features-additional h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.additional-item {
+  width: 400px;
+  height: 330px;
+  background-color: #ffffff;
+  text-align: center;
+}
