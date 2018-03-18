@@ -1,3 +1,8 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,7 +26,12 @@ a {
     url("../img/main-background-cut.jpg");
   background-repeat: no-repeat;
   background-position: center center, top center;
-  margin: 0 auto;
+
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 531px;
 }
 
 .main-navigation {
@@ -39,6 +49,22 @@ a {
   color: #cacaca;
 }
 
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.site-navigation li {
+  width: 239px;
+  min-height: 56px;
+  text-align: center;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 244px;
+}
+
 .site-navigation,
 .features-list,
 .additional-features,
@@ -48,6 +74,8 @@ a {
 .sort-updown,
 .hotels-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .lead-top {
@@ -56,7 +84,6 @@ a {
   font-weight: 700;
   text-align: center;
   width: 440px;
-  margin: auto;
 }
 
 .sedona-reason {
@@ -65,7 +92,8 @@ a {
   text-align: center;
 }
 
-.features-item h3 {
+.features-item h3,
+.features-additional h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -73,10 +101,11 @@ a {
 
 .features-text {
   width: 400px;
-  height: 256px;
+  min-height: 256px;
   background-color: #85b5d3;
   color: #ffffff;
   text-align: center;
+  padding-top: 100px;
 }
 
 .features-item:nth-child(1n+3) {
@@ -84,12 +113,6 @@ a {
   height: 256px;
   background-color: #eeeeee;
   text-align: center;
-}
-
-.features-additional h3 {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
 }
 
 .additional-item {
@@ -188,6 +211,13 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
 }
 
 /*Стили hotels.html*/
