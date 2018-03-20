@@ -30,6 +30,7 @@ a {
 }
 
 .main-background {
+  position: relative;
   width: 1200px;
   height: 508px;
   background-image:
@@ -38,6 +39,17 @@ a {
   background-repeat: no-repeat;
   background-position: center center, top center;
   margin-bottom: 60px;
+}
+
+.main-background::before {
+  content: "";
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  background-image: url("../img/background-decoration.png");
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: 0;
 }
 
 .main-header-logo {
@@ -330,36 +342,65 @@ a {
 .main-footer {
   width: 1200px;
   height: 120px;
+  display: flex;
 }
 
 .footer-hash {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  width: 136px;
+  margin-left: 132px;
+  margin-top: 40px;
 }
 
-.footer-social a {
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+  margin-top: 30px;
+  margin-left: 256px;
+}
+
+.footer-copyright {
+  width: 200px;
+  height: 41px;
+  margin-top: 33px;
+  margin-left: 233px;
+}
+
+.footer-copyright span {
+  display: inline-block;
+}
+
+.social-button {
   display: inline-block;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-social li:first-child > a {
-  background-image: url(../img/twitter.svg);
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
 }
 
-.footer-social li:nth-child(2) > a {
-  background-image: url(../img/fb-icon.svg);
+.social-button:active path {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
-.footer-social li:last-child > a {
-  background-image: url(../img/youtube.svg);
+.academy-logo:hover path,
+.academy-logo:focus path {
+  fill: #81b3d2;
 }
 
+.academy-logo:active path {
+  fill: #bdbbbc;
+}
 
 /*Стили hotels.html*/
 
