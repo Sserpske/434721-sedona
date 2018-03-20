@@ -34,47 +34,53 @@
           <li class="features-item">
             <div class="features-text">
               <h3>Настоящий городок</h3>
-              <p class="numbers">&mdash;&nbsp;&#8470;&nbsp;1 &mdash;</p>
+              <p class="numbers">&mdash;&nbsp;&#8470;1 &mdash;</p>
               <p class="features-description">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <img src="img/true-city.jpg" width="800" height="256" alt="Город Седона">
           </li>
           <li class="features-item">
             <div class="features-text">
-              <h3>Там есть мост дьявола</h3>
-              <p class="numbers">&mdash;&nbsp;&#8470;&nbsp;2 &mdash;</p>
-              <p class="features-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <h3>Там есть<br> мост дьявола</h3>
+              <p class="numbers">&mdash;&nbsp;&#8470;2 &mdash;</p>
+              <p class="features-description">Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
             </div>
             <img src="img/devil-bridge.jpg" width="800" height="256" alt="Мост дьявола">
           </li>
           <li class="features-item">
-            <h3>Небольшая площадь</h3>
-            <p class="numbers">&mdash;&nbsp;&#8470;&nbsp;3 &mdash;</p>
-            <p class="features-description">Все достопримечательности находятся очень близко</p>
+            <div class="features-add-text">
+              <h3>Небольшая площадь</h3>
+              <p class="numbers">&mdash;&nbsp;&#8470;3 &mdash;</p>
+              <p class="features-description">Все достопримечательности<br> находятся очень близко</p>
+            <div>
           </li>
           <li class="features-item">
-            <h3>Красивая дорога</h3>
-            <p class="numbers">&mdash;&nbsp;&#8470;&nbsp;4 &mdash;</p>
-            <p class="features-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="features-add-text">
+              <h3>Красивая дорога</h3>
+              <p class="numbers">&mdash;&nbsp;&#8470;4 &mdash;</p>
+              <p class="features-description">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+            </div>
           </li>
           <li class="features-item">
-            <h3>Мало туристов</h3>
-            <p class="numbers">&mdash;&nbsp;&#8470;&nbsp;5 &mdash;</p>
-            <p class="features-description">Большинство едет в гранд каньон и толпится там</p>
+            <div class="features-add-text">
+              <h3>Мало<br> туристов</h3>
+              <p class="numbers">&mdash;&nbsp;&#8470;5 &mdash;</p>
+              <p class="features-description">Большинство едет в&nbsp;гранд каньон и толпится там</p>
+            </div>
           </li>
           <li class="features-additional">
             <ul class="additional-list">
               <li class="additional-item">
                 <h3>Жилье</h3>
-                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="features-description">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
               </li>
               <li class="additional-item">
                 <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                <p class="features-description">Всегда заказывайте фирменный бургер, Вы&nbsp;не&nbsp;разочаруетесь!</p>
               </li>
               <li class="additional-item">
                 <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
+                <p class="features-description">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
               </li>
             </ul>
           </li>
@@ -84,32 +90,34 @@
         <h2 class="visually-hidden">Поиск отеля</h2>
         <div class="booking-wrap">
           <p class="booking-lead">Заинтересовались?</p>
-          <p class="booking-date">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
+          <p class="booking-date">Укажите предполагаемые даты поездки,<br>и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
           <p class="search-form-button"><a href="#">Поиск гостиниц в седоне</a></p>
         </div>
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="booking-form">
-            <p class="arrival-date">
-              <label for="arrival-date">Дата заезда:</label>
-              <input type="text" class="input-field" name="arrival-date" id="arrival-date" value="24 апреля 2017">
-            </p>
-            <p class="departure-date">
-              <label for="departure-date">Дата выезда:</label>
-              <input type="text" class="input-field" name="departure-date" id="departure-date" value="4 июля 2017">
-            </p>
-            <p class="adults">
-              <label for="adults">Взрослые:</label>
-              <button type="button">Минус</button>
-              <input type="text" class="input-field" name="adults" id="adults" value="2">
-              <button type="button">Плюс</button>
-            </p>
-            <p class="children">
-              <label for="children">Дети:</label>
-              <button type="button">Минус</button>
-              <input type="text" class="input-field" name="children" id="children" value="0">
-              <button type="button">Плюс</button>
-            </p>
-            <button type="submit" class="booking-search">Найти</button>
+            <div class="form-container">
+              <p class="arrival-date">
+                <label for="arrival-date">Дата заезда:</label>
+                <input type="text" class="input-field" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+              </p>
+              <p class="departure-date">
+                <label for="departure-date">Дата выезда:</label>
+                <input type="text" class="input-field" name="departure-date" id="departure-date" value="4 июля 2017">
+              </p>
+              <p class="adults">
+                <label for="adults">Взрослые:</label>
+                <button type="button">Минус</button>
+                <input type="text" class="input-field" name="adults" id="adults" value="2">
+                <button type="button">Плюс</button>
+              </p>
+              <p class="children">
+                <label for="children">Дети:</label>
+                <button type="button">Минус</button>
+                <input type="text" class="input-field" name="children" id="children" value="0">
+                <button type="button">Плюс</button>
+              </p>
+              <button type="submit" class="booking-search">Найти</button>
+            </div>
           </fieldset>
         </form>
       </section>

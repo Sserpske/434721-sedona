@@ -107,6 +107,12 @@ a {
   margin-bottom: 50px;
 }
 
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
 .features-item h3,
 .features-additional h3 {
   font-size: 21px;
@@ -132,16 +138,88 @@ a {
   text-align: center;
 }
 
+.features-item {
+  display: flex;
+}
+
+.features-item:first-child {
+  order: -2;
+}
+
+.features-item:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.features-additional {
+  order: -1;
+}
+
+.additional-list {
+  display: flex;
+}
+
 .additional-item {
+  box-sizing: border-box;
   width: 400px;
-  height: 330px;
+  min-height: 330px;
   background-color: #ffffff;
   text-align: center;
+  position: relative;
+  padding-top: 140px;
+}
+
+.additional-item:first-child::before {
+  content: "";
+  width: 74px;
+  height: 85px;
+  position: absolute;
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 162px;
+  top: 60px;
+}
+
+.additional-item:nth-child(2)::before {
+  content: "";
+  width: 74px;
+  height: 85px;
+  position: absolute;
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 161px;
+  top: 61px;
+}
+
+.additional-item:last-child::before {
+  content: "";
+  width: 74px;
+  height: 85px;
+  position: absolute;
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 168px;
+  top: 56px;
+}
+
+.features-add-text {
+  padding-top: 27px;
+}
+
+.features-description {
+  padding: 0 48px 0 48px;
+}
+
+.numbers {
+  padding-top: 3px;
+  padding-bottom: 7px;
 }
 
 .booking-wrap {
   width: 1200px;
-  height: 291px;
+  height: 241px;
   font-size: 14px:
   line-height: 24px;
   text-align: center;
@@ -151,16 +229,27 @@ a {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.booking-date {
+  line-height: 24px;
+  margin-bottom: 46px;
 }
 
 .search-form-button a {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 568px;
+  height: 86px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   background-color: #766357;
   color: #fff;
   text-align: center;
-  vertical-align: middle;
+  padding-top: 30px;
 }
 
 .search-form-button a:hover,
@@ -174,6 +263,8 @@ a {
 }
 
 .booking-search {
+  width: 458px;
+  height: 58px;
   font: inherit;
   font-size: 21px;
   line-height: 26px;
@@ -196,9 +287,27 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.booking {
+  position: relative;
+}
+
 .booking-form {
   line-height: 26px;
   font-weight: 700;
+  position: absolute;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  width: 568px;
+  height: 395px;
+  left: 314px;
+  border: none;
+  padding: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .input-field {
