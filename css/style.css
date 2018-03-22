@@ -55,6 +55,7 @@ a {
 .main-header-logo {
   position: absolute;
   left: 531px;
+  z-index: 1;
 }
 
 .main-navigation {
@@ -98,7 +99,9 @@ a {
 .footer-social,
 .hotels-sort,
 .sort-updown,
-.hotels-list {
+.hotels-list,
+.type-housing,
+.infra {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -110,13 +113,13 @@ a {
   font-weight: 700;
   text-align: center;
   padding: 0 350px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .sedona-reason {
   line-height: 26px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 51px;
 }
 
 .features-list {
@@ -173,7 +176,7 @@ a {
 .additional-item {
   box-sizing: border-box;
   width: 400px;
-  min-height: 330px;
+  min-height: 329px;
   background-color: #ffffff;
   text-align: center;
   position: relative;
@@ -340,18 +343,22 @@ a {
 }
 
 .main-footer {
+  position: relative;
+  bottom: 125px;
   width: 1200px;
   height: 120px;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-hash {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  width: 136px;
-  margin-left: 132px;
-  margin-top: 40px;
+  margin-left: 32px;
+  margin-bottom: 4px;
 }
 
 .footer-social {
@@ -359,19 +366,17 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
-  margin-top: 30px;
-  margin-left: 256px;
+  margin-left: 55px;
+  margin-bottom: 3px;
 }
 
 .footer-copyright {
-  width: 200px;
-  height: 41px;
-  margin-top: 33px;
-  margin-left: 233px;
-}
-
-.footer-copyright span {
-  display: inline-block;
+  width: 196px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 28px;
+  margin-bottom: 12px;
 }
 
 .social-button {
@@ -410,16 +415,29 @@ a {
 
 .filter {
   width: 1200px;
-  height: 217px;
+  min-height: 217px;
   background-image: url(../img/hotels-background-cut.jpg);
   background-color: #495b66;
   color: #ffffff;
 }
 
-.filter-criterion legend {
+.filter-group {
+  width: 1200px;
+  min-height: 217px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.filter-criterion li {
+  padding-bottom: 30px;
+}
+
+.filter-criterion legend:not(:last-child) {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
+  padding-bottom: 20px;
 }
 
 .filter-button {
