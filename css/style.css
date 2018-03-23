@@ -426,18 +426,78 @@ a {
   min-height: 217px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+}
+
+.filter-criterion {
+  margin: 0;
+  padding: 0;
+}
+
+.first-criterion {
+  margin-left: 72px;
+  margin-top: 21px;
+}
+
+.second-criterion {
+  margin-left: 118px;
+  margin-top: 21px;
+}
+
+.filter-range {
+  margin-left: 350px;
 }
 
 .filter-criterion li {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
+  padding-left: 23px;
+  position: relative;
 }
 
-.filter-criterion legend:not(:last-child) {
+.filter-criterion input:before {
+  content: "";
+  width: 27px;
+  height: 23px;
+  position: absolute;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 0px;
+  top: -1px;
+}
+
+.filter-criterion legend {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
-  padding-bottom: 20px;
+}
+
+.filter-criterion:first-child legend,
+.filter-criterion:nth-child(2) legend {
+  margin-bottom: 25px;
+}
+
+.filter-range {
+  width: 320px;
+}
+
+.filter-range legend {
+  margin-bottom: 10px;
+}
+
+.filter-price {
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.filter-price label {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  /*width: 90px;*/
+  padding-left: 65px;
+  line-height: 38px;
 }
 
 .filter-button {
@@ -457,7 +517,10 @@ a {
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
-  border: 2px solid #ffffff;
+  width: 30px;
+  margin: 0;
+  border: none;
+  line-height: 38px;
 }
 
 .filter-group {

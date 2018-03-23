@@ -28,8 +28,8 @@
         <h2 class="visually-hidden">Фильтр отелей</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="filter-group">
-            <fieldset class="filter-criterion">
-            <legend>Инфраструктура</legend>
+            <fieldset class="filter-criterion first-criterion">
+            <legend>Инфраструктура:</legend>
             <ul class="infra">
               <li>
                 <input type="checkbox" name="pool" id="pool" checked>
@@ -45,8 +45,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-criterion">
-            <legend>Тип жилья</legend>
+          <fieldset class="filter-criterion second-criterion">
+            <legend>Тип жилья:</legend>
             <ul class="type-housing">
               <li>
                 <input type="checkbox" name="hotel" id="hotel" checked>
@@ -62,14 +62,16 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-criterion">
+          <fieldset class="filter-criterion filter-range">
             <legend>Стоимость в сутки (Р):</legend>
-            <label for="price-from">От</label>
-            <input type="text" class="price-field" name="price-from" id="price-from" value="0" disabled>
-            <label for="price-to">До</label>
-            <input type="text" class="price-field" name="price-to" id="price-to" value="3000" disabled>
-            <div>
-            <!-- бегунки -->
+            <div class="filter-price">
+              <label for="price-from" class="qqq">От</label>
+              <input type="text" class="price-field" name="price-from" id="price-from" value="0" disabled>
+              <label for="price-to" class="www">До</label>
+              <input type="text" class="price-field" name="price-to" id="price-to" value="3000" disabled>
+            </div>
+            <div class="filter-scale">
+              <div class="filter-bar"></div>
             </div>
             <button type="submit" class="filter-button">Показать</button>
           </fieldset>
