@@ -326,13 +326,117 @@ a {
 .form-container {
   display: flex;
   flex-wrap: wrap;
+  padding: 41px 50px 58px 55px;
 }
 
 .input-field {
+  box-sizing: border-box;
   background-color: #f2f2f2;
   border: none;
   font: inherit;
   text-transform: uppercase;
+}
+
+.full-width {
+  width: 346px;
+  padding: 6px 12px 6px 12px;
+}
+
+.adults {
+  display: flex;
+  margin-top: 16px;
+}
+
+.arrival-date .input-field {
+  margin-left: 21px;
+  margin-bottom: 1px;
+}
+
+.departure-date .input-field {
+  margin-left: 17px;
+}
+
+.half-width {
+  width: 38px;
+  height: 38px;
+  padding: 6px 12px 6px 15px;
+}
+
+.adults label {
+  margin-right: 41px;
+  margin-top: 6px;
+}
+
+.children {
+  display: flex;
+  margin-left: 53px;
+  margin-top: 16px;
+  margin-bottom: 54px;
+}
+
+.children label {
+  margin-right: 27px;
+  margin-top: 6px;
+}
+
+.minus-button::before {
+content: "";
+height: 3px;
+width: 11px;
+background: #a9a9a9;
+position: absolute;
+left: 13px;
+top: 18px;
+}
+
+.minus-button:hover::before,
+.minus-button:focus::before {
+  background-color: #000000;
+}
+
+.minus-button:active::before {
+  background-color: #81b3d2;
+}
+
+.plus-button::before {
+content: "";
+height: 3px;
+width: 11px;
+background: #a9a9a9;
+position: absolute;
+left: 13px;
+top: 18px;
+}
+
+.plus-button::after {
+content: "";
+height: 11px;
+width: 3px;
+background: #a9a9a9;
+position: absolute;
+right: 18px;
+top: 14px;
+}
+
+.plus-button:hover::before,
+.plus-button:hover::after,
+.plus-button:focus::before,
+.plus-button:focus::after {
+   background-color: #000000;
+}
+
+.plus-button:active::before,
+.plus-button:active::after {
+  background-color: #81b3d2;
+}
+
+.minus-button,
+.plus-button {
+  position: relative;
+  border: none;
+  background-color: #f2f2f2;
+  width: 38px;
+  height: 38px;
 }
 
 .input-field:hover {
