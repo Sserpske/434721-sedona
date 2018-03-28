@@ -6,7 +6,7 @@ body {
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
-  /*background-color: #f2f2f2;*/
+  background-color: #f2f2f2;
 }
 
 a {
@@ -17,6 +17,7 @@ a {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 header,
@@ -136,7 +137,7 @@ footer {
 }
 
 .lead-main {
-  padding: 39px 350px 37px 350px;
+  padding: 60px 350px 51px 350px;
   text-align: center;
   line-height: 26px;
 }
@@ -145,6 +146,11 @@ footer {
   font-size: 21px;
   font-weight: 700;
   margin-bottom: 27px;
+  margin-top: 0;
+}
+
+.sedona-reason {
+  margin: 0;
 }
 
 .features-list {
@@ -157,6 +163,8 @@ footer {
   line-height: 21px;
   font-weight: 700;
   padding: 0 115px;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .features-additional h3 {
@@ -164,7 +172,8 @@ footer {
   line-height: 21px;
   font-weight: 700;
   padding: 0 115px;
-  padding-bottom: 3px;
+  margin: 21px 0;
+  margin-bottom: 24px;
 }
 
 .features-text {
@@ -173,7 +182,7 @@ footer {
   background-color: #85b5d3;
   color: #ffffff;
   text-align: center;
-  padding-top: 26px;
+  padding-top: 47px;
   padding-bottom: 45px;
 }
 
@@ -182,7 +191,7 @@ footer {
   background-color: #eeeeee;
   text-align: center;
   padding-bottom: 45px;
-  padding-top: 26px;
+  padding-top: 47px;
 }
 
 .features-item {
@@ -255,11 +264,11 @@ footer {
 
 .features-description {
   padding: 0 48px 0 48px;
+  margin: 14px 0;
 }
 
 .numbers {
-  padding-top: 3px;
-  padding-bottom: 7px;
+  margin-bottom: 21px;
 }
 
 .booking-wrap {
@@ -280,23 +289,21 @@ footer {
 
 .booking-date {
   line-height: 24px;
-  margin-bottom: 47px;
-  padding-left: 65px;
-  padding-right: 65px;
+  margin: 14px 0 47px 0;
+  padding: 0 65px;
 }
 
 .search-form-button a {
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  height: 86px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   background-color: #766357;
   color: #fff;
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 .search-form-button a:hover,
