@@ -31,16 +31,16 @@
             <fieldset class="filter-criterion first-criterion">
             <legend>Инфраструктура:</legend>
             <ul class="infra">
-              <li>
+              <li class="filter-item">
                 <input type="checkbox" name="pool" id="pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
-              <li>
+              <li class="filter-item">
                 <input type="checkbox" name="parking" id="parking">
                 <label for="parking">Парковка</label>
               </li>
-              <li>
-                <input type="checkbox" name="wi-fi" id="wi-fi">
+              <li class="filter-item">
+                <input type="checkbox" name="wi-fi" id="wi-fi" disabled>
                 <label for="wi-fi">Wi-Fi</label>
               </li>
             </ul>
@@ -48,16 +48,16 @@
           <fieldset class="filter-criterion second-criterion">
             <legend>Тип жилья:</legend>
             <ul class="type-housing">
-              <li>
+              <li class="filter-item">
                 <input type="checkbox" name="hotel" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
-              <li>
+              <li class="filter-item">
                 <input type="checkbox" name="motel" id="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
-              <li>
-                <input type="checkbox" name="apartment" id="apartment" checked>
+              <li class="filter-item">
+                <input type="checkbox" name="apartment" id="apartment" checked disabled>
                 <label for="apartment">Апартаменты</label>
               </li>
             </ul>
@@ -116,9 +116,14 @@
                   </div>
                 </div>
               </div>
-              <div class="hotels-score hotels-score-1">
+              <div class="hotels-score">
+                <div>
+                  <span class="hotels-star"><img src="img/star.svg" width="18" height="17" align="Звезда"></span>
+                  <span class="hotels-star"><img src="img/star.svg" width="18" height="17" align="Звезда"></span>
+                  <span class="hotels-star"><img src="img/star.svg" width="18" height="17" align="Звезда"></span>
+                  <span class="hotels-star"><img src="img/star.svg" width="18" height="17" align="Звезда"></span>
+                </div>
                 <span class="hotels-rating">Рейтинг: 8,5</span>
-                  <!-- звёзды -->
               </div>
             </article>
           </li>
@@ -143,8 +148,12 @@
                 </div>
               </div>
               <div class="hotels-score hotels-score-2">
+                <div>
+                  <span class="hotels-star"><img src="img/star.svg" width="18" height="17" align="Звезда"></span>
+                  <span class="hotels-star"><img src="img/star.svg" width="18" height="17" align="Звезда"></span>
+                  <span class="hotels-star"><img src="img/star.svg" width="18" height="17" align="Звезда"></span>
+                </div>
                 <span class="hotels-rating">Рейтинг: 8,9</span>
-                  <!-- звёзды -->
               </div>
             </article>
           </li>
@@ -169,8 +178,11 @@
                 </div>
               </div>
               <div class="hotels-score hotels-score-3">
+                <div>
+                  <span class="hotels-star"><img src="img/star.svg" width="18" height="17" align="Звезда"></span>
+                  <span class="hotels-star"><img src="img/star.svg" width="18" height="17" align="Звезда"></span>
+                </div>
                 <span class="hotels-rating">Рейтинг: 9,2</span>
-                  <!-- звёзды -->
               </div>
             </article>
           </li>
