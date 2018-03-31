@@ -38,6 +38,7 @@ footer {
   overflow: hidden;
 }
 
+
 .main-background {
   position: relative;
   width: 1200px;
@@ -329,6 +330,7 @@ footer {
   color: #ffffff;
   border: none;
   text-align: center;
+  margin-top: 40px;
 }
 
 .booking-search:hover,
@@ -357,6 +359,7 @@ footer {
   border: none;
   padding: 0;
   box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.1);
+  display: none;
 }
 
 .form-container {
@@ -381,6 +384,9 @@ footer {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   outline: 0;
+}
+
+.full-width:focus {
   padding: 4px 10px 4px 10px;
 }
 
@@ -418,6 +424,7 @@ footer {
 .adults {
   display: flex;
   margin-top: 16px;
+  margin-bottom: 14px;
 }
 
 .arrival-date .input-field {
@@ -444,7 +451,7 @@ footer {
   display: flex;
   margin-left: 53px;
   margin-top: 16px;
-  margin-bottom: 54px;
+  margin-bottom: 14px;
 }
 
 .children label {
@@ -591,6 +598,24 @@ top: 14px;
   fill: #bdbbbc;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.8s;
+}
+
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-350px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+
 /*Стили hotels.html*/
 
 .site-navigation-current {
@@ -642,7 +667,7 @@ top: 14px;
 
 .filter-item label:before {
   content: "";
-  width: 27px;
+  width: 23px;
   height: 23px;
   position: absolute;
   background-image: url("../img/checkbox-off.svg");
@@ -653,6 +678,7 @@ top: 14px;
 }
 
 .filter-item input[type="checkbox"]:checked + label::before {
+  width: 27px;
   background-image: url("../img/checkbox-on.svg");
 }
 
@@ -661,6 +687,7 @@ top: 14px;
 }
 
 .filter-item input[type="checkbox"]:checked:disabled + label::before {
+  width: 27px;
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
@@ -715,18 +742,18 @@ top: 14px;
 }
 
 .filter-price input {
-  width: 73px;
+  width: 60px;
   padding-left: 4px;
 }
 
 .price-from {
-  padding-left: 65px;
-  padding-right: 7px;
+  padding-left: 64px;
+  padding-right: 13px;
 }
 
 .price-to {
-  padding-left: 42px;
-  padding-right: 7px;
+  padding-left: 50px;
+  padding-right: 20px;
 }
 
 .filter-scale {
