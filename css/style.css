@@ -44,9 +44,9 @@ footer {
   height: 508px;
   background-image:
     url(../img/welcome-sedona.png),
-    url("../img/main-background-cut.jpg");
+    url("../img/main-background.jpg");
   background-repeat: no-repeat;
-  background-position: center 49%, top center;
+  background-position: center 49%, center 21%;
 }
 
 .main-background::before {
@@ -74,12 +74,12 @@ footer {
   font-weight: 700;
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus {
+.main-navigation a:not(.site-navigation-current):hover,
+.main-navigation a:not(.site-navigation-current):focus {
   color: #81b3d2;
 }
 
-.main-navigation a:active {
+.main-navigation a:not(.site-navigation-current):active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -593,7 +593,7 @@ top: 14px;
 
 /*Стили hotels.html*/
 
-.site-navigation-current a {
+.site-navigation-current {
   color: #766357;
 }
 
@@ -607,7 +607,7 @@ top: 14px;
 .filter-group {
   display: flex;
   align-items: flex-start;
-  padding: 27px 73px 31px 72px;
+  padding: 27px 72px 31px 72px;
 }
 
 .filter-group legend {
@@ -652,10 +652,6 @@ top: 14px;
   top: -2px;
 }
 
-/*.filter-item input[type="checkbox"]:focus + label::before {
-  outline: 5px auto;
-}*/
-
 .filter-item input[type="checkbox"]:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
 }
@@ -672,13 +668,7 @@ top: 14px;
   display: none;
 }
 
-
-
-
-/*форма range*/
-
 .filter-range {
-  width: 330px;
   color: #ffffff;
   text-transform: uppercase;
   margin-left: auto;
@@ -686,7 +676,7 @@ top: 14px;
 }
 
 .filter-range legend {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .filter-price input,
@@ -699,12 +689,12 @@ top: 14px;
 }
 
 .filter-price {
+  position: relative;
   box-sizing: border-box;
   height: 36px;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  font-size:
 }
 
 .filter-price label {
@@ -714,17 +704,86 @@ top: 14px;
   cursor: pointer;
 }
 
-.filter-price input {
-  width: 50px;
+.filter-price::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  top: 15%;
+  left: 50%;
 }
 
-.price-from,
-.price-to {
-  width: 90px;
+.filter-price input {
+  width: 75px;
+  padding-left: 4px;
+}
+
+.price-from {
   padding-left: 65px;
 }
 
+.price-to {
+  padding-left: 47px;
+  padding-right: 5px;
+}
 
+.filter-scale {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.filter-scale .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.filter-scale .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  background-image: url(../img/filter-button.svg);
+  width: 20px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover {
+  width: 22px;
+  height: 25px;
+  background-image: url(../img/filter-button-hover.svg);
+}
+
+.filter-button {
+  display: block;
+  margin: 0 91px 0 85px;
+  padding: 6px 33px 6px 34px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
 
 .filter-result {
   display: flex;
