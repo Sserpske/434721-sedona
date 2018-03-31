@@ -715,17 +715,18 @@ top: 14px;
 }
 
 .filter-price input {
-  width: 75px;
+  width: 73px;
   padding-left: 4px;
 }
 
 .price-from {
   padding-left: 65px;
+  padding-right: 7px;
 }
 
 .price-to {
-  padding-left: 47px;
-  padding-right: 5px;
+  padding-left: 42px;
+  padding-right: 7px;
 }
 
 .filter-scale {
@@ -736,12 +737,14 @@ top: 14px;
 .filter-scale .scale {
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
+  padding-left: 3px;
 }
 
 .filter-scale .bar {
   width: 80%;
   height: 2px;
   background: #ffffff;
+  padding-left: 1px;
 }
 
 .range-toggle {
@@ -754,17 +757,26 @@ top: 14px;
 }
 
 .range-toggle-min {
-  left: 0;
+  left: 1px;
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 253px;
 }
 
 .range-toggle:hover {
   width: 22px;
   height: 25px;
   background-image: url(../img/filter-button-hover.svg);
+  top: -10px;
+}
+
+.range-toggle-min:hover {
+  left: 0;
+}
+
+.range-toggle-max:hover {
+  left: 252px;
 }
 
 .filter-button {
