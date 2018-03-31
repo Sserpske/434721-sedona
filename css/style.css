@@ -15,6 +15,7 @@ a {
 }
 
 .container {
+  display: block;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -621,7 +622,6 @@ top: 14px;
   border: none;
 }
 
-
 .filter-item:not(:last-child) {
   padding-bottom: 25px;
 }
@@ -677,64 +677,67 @@ top: 14px;
 
 /*форма range*/
 
-.filter-price {
-  height: 36px;
-  margin-bottom: 20px;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-}
-
 .filter-range {
+  width: 330px;
+  color: #ffffff;
+  text-transform: uppercase;
   margin-left: auto;
+  font: inherit;
 }
 
-.filter-price label {
-  display: inline-block;
-  vertical-align: top;
-  cursor: pointer;
-  /*width: 90px;*/
-  padding-left: 65px;
-  line-height: 38px;
+.filter-range legend {
+  margin-bottom: 15px;
 }
 
+.filter-price input,
 .filter-button {
   font: inherit;
   text-transform: inherit;
   border: none;
-  text-align: center;
-  vertical-align: middle;
-  background-color: transparent;
+  background: none;
   color: #ffffff;
-  border: 2px solid #ffffff;
 }
 
-.price-field {
-  font: inherit;
-  background-color: transparent;
-  color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-  width: 30px;
-  margin: 0;
-  border: none;
-  line-height: 38px;
+.filter-price {
+  box-sizing: border-box;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size:
+}
+
+.filter-price label {
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.filter-price input {
+  width: 50px;
+}
+
+.price-from,
+.price-to {
+  width: 90px;
+  padding-left: 65px;
 }
 
 
 
 .filter-result {
-  box-sizing: border-box;
   display: flex;
-  min-height: 86px;
   align-items: center;
-  padding: 0 72px;
+  padding: 30px 72px;
 }
 
 .filter-count {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin: 21px 48px 21px 0;
+  margin: 0;
+  margin-right: 48px;
 }
 
 .sort-container {

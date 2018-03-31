@@ -65,13 +65,16 @@
           <fieldset class="filter-criterion filter-range">
             <legend>Стоимость в сутки (Р):</legend>
             <div class="filter-price">
-              <label for="price-from">От</label>
-              <input type="text" class="price-field" name="price-from" id="price-from" value="0" disabled>
-              <label for="price-to">До</label>
-              <input type="text" class="price-field" name="price-to" id="price-to" value="3000" disabled>
+              <label class="price-from">От<input type="text" class="price-field" name="price-from" id="price-from" value="0"></label>
+              <label class="price-to">До
+              <input type="text" class="price-field" name="price-to" id="price-to" value="3000"></label>
             </div>
             <div class="filter-scale">
-              <div class="filter-bar"></div>
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
             <button type="submit" class="filter-button">Показать</button>
           </fieldset>
