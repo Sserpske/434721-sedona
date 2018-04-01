@@ -1,0 +1,1 @@
+var link=document.querySelector(".search-form-button"),popup=document.querySelector(".booking-form");popup.classList.remove("modal-show-nojs"),link.addEventListener("click",function(o){o.preventDefault(),popup.classList.toggle("modal-show")});
