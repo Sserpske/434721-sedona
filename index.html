@@ -96,7 +96,7 @@
           <p class="search-form-button"><a href="#">Поиск гостиницы в седоне</a></p>
         </div>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="booking-form">
+          <fieldset class="booking-form modal-show-nojs">
             <div class="form-container">
               <p class="arrival-date">
                 <label for="arrival-date">Дата заезда:</label>
@@ -148,7 +148,7 @@
     <script>
       var link = document.querySelector(".search-form-button");
       var popup = document.querySelector(".booking-form");
-
+      popup.classList.remove("modal-show-nojs")
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.toggle("modal-show");
